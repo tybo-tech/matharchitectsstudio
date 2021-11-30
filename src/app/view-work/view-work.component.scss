@@ -1,0 +1,59 @@
+.main {
+  position: relative;
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 10rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .data {
+    position: fixed;
+    left: 40%;
+    bottom: 4rem;
+    width: 20%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.699);
+    color: #fff;
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    button {
+      padding: 1rem;
+      background: #fff;
+      color: #000;
+      font-weight: 900;
+      margin: .1rem 2rem;
+      border: 2px solid rgb(95, 58, 226);
+      cursor: pointer;
+
+
+      &:hover {
+        box-shadow: 5px 5px rgba(0, 98, 90, 0.4),
+          10px 10px rgba(0, 98, 90, 0.3),
+          15px 15px rgba(0, 98, 90, 0.2),
+          20px 20px rgba(0, 98, 90, 0.1),
+          25px 25px rgba(0, 98, 90, 0.05);
+      }
+    }
+
+    .success {
+      border: 2px solid rgb(16, 224, 68);
+    }
+  }
+}

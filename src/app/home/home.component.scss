@@ -1,0 +1,96 @@
+@import '../../assets/styles/colors.scss';
+
+.home {
+  position: relative;
+  animation: moveInButton 1s ease-out 0s;
+  animation-fill-mode: backwards;
+  padding: 5rem 8rem;
+  background: #000;
+  margin-top: -5px;
+  background-image: url(../../assets/gall-2/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  animation: gradient 120s ease infinite;
+  color: #fff;
+
+  @media only screen and (max-width: 600px) {
+    padding: .2rem;
+  }
+
+  // background: yellow;
+  display: grid;
+  grid-template-columns: 60% auto;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
+
+
+  .intro {
+    padding: 2rem;
+    margin-top: 8rem;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    width:60%;
+
+    @media only screen and (max-width: 600px) {
+      padding: 2rem 1rem;
+      margin: .5rem;
+      width: 100%;
+      left: 0;
+
+    }
+
+    h2 {
+      // color: $strong-gray;
+      color: #fff;
+
+      @media only screen and (max-width: 600px) {
+        font-weight: 400;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 3rem 1rem;
+
+      span {
+        display: block;
+        margin-top: 2rem;
+        // color: rgb(148, 145, 145);
+        color: #fff;
+
+      }
+    }
+  }
+
+  .logo {
+    text-align: right;
+
+    img {
+      width: 70%;
+      margin-top: 10%;
+
+      @media only screen and (max-width: 600px) {
+        width: 80%;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .cilcle {
+    text-align: right;
+    padding: 7rem 15rem;
+
+    img {
+      width: 40rem;
+    }
+  }
+}
+
+.space {
+  height: 120vh;
+}

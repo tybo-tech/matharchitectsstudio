@@ -1,0 +1,21 @@
+<div class="main">
+  <div class="images">
+    <div class="image" *ngFor="let item of items">
+      <img [src]="item" alt="">
+    </div>
+  </div>
+
+  <div class="data">
+    <h1>
+      {{work}}
+    </h1>
+
+    <button class="success" (click)="goto('connect')">
+      Contact Us
+    </button>
+    <button (click)="goto('work')">
+      Back
+    </button>
+  </div>
+
+</div>

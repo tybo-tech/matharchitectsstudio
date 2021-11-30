@@ -1,0 +1,163 @@
+@import '../../assets/styles/colors.scss';
+
+.work {
+  background: #000;
+  margin: 1rem 0;
+  padding: 2rem 8rem;
+
+
+  @media only screen and (max-width: 600px) {
+    padding: .2rem;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 100%;
+      text-align: center;
+    }
+
+    .image {
+      margin-bottom: 1rem;
+
+      img {
+        width: 99%;
+      }
+    }
+  }
+
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 100%;
+    }
+
+    video {
+      width: 96%;
+      margin: 1rem auto;
+      border-radius: .2rem;
+    }
+  }
+}
+
+
+.about {
+  padding: 2rem;
+  margin-left: 4rem;
+
+  @media only screen and (max-width: 600px) {
+    margin: .5rem;
+  }
+
+  // background: red;
+  .text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 1rem;
+    padding: 0.5rem 2rem;
+
+    p {
+      width: 80%;
+      font-size: 1.2rem;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 100%;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    padding: .2rem;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 60% auto;
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 100%;
+    }
+
+    p {
+      width: 75%;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+        padding: 1.5rem;
+      }
+    }
+
+    img {
+      width: 100%;
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.services {
+  background: #000;
+  margin: 1rem 0;
+
+  h1 {
+    margin-bottom: 4rem;
+    padding-left: 4rem;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(2, 50%);
+
+    }
+
+    .image {
+      margin-bottom: 5rem;
+      text-align: center;
+
+      img {
+        width: 15rem;
+
+        @media only screen and (max-width: 600px) {
+          width: 8rem;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  padding-bottom: 6rem;
+  padding: 2rem 8rem;
+
+  @media only screen and (max-width: 600px) {
+    padding: .2rem;
+  }
+
+  h1 {
+    width: 40%;
+    font-size: 4rem;
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+}
